@@ -1,1 +1,0 @@
-# SS-_a_ariel_ex2
