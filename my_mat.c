@@ -5,6 +5,11 @@
 
 int mat[10][10];
 
+int min(int x, int y)
+{
+  return (x < y) ? x : y;
+}
+
 //======================== FLOYD ALGO ============================
 void floydWarshallAlgo(int matrix[10][10])
 {
@@ -23,8 +28,7 @@ void floydWarshallAlgo(int matrix[10][10])
 		{
 			for (j = 0; j < 10; j++)
 			{
-				if (mat[i][k] + mat[k][j] < mat[i][j])
-					mat[i][j] = mat[i][k] + mat[k][j];
+				mat[i][j] = min(mat[i][j], mat[i][k]+mat[k][j]);
 			}
 		}
 	}

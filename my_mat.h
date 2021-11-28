@@ -2,6 +2,7 @@
 #define _MY_MAT_H_
 
 void floydWarshallAlgo(int matrix[10][10]);
+int min(int x, int y);
 void changeZeroToInf(int mat[10][10]);
 void changeZeroAndIntToMinus(int mat[10][10]);
 void A(int matrix[10][10]);
